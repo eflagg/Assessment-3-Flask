@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Application Form{% endblock %}
+{% block content%}
+	<h1>Application Form</h1>
+	<p>Please fill out the following form to apply for a job with our company!</p>
+	<form class="border" action="/application" method="POST">
+		<label for="first-name">First Name: </label>
+		<input id="first-name" class="text-box" type="text" name="first-name" required></input><br>
+		
+		<label for="last-name"><span>Last Name: </span></label>
+		<input id="last-name" class="text-box" type="text" name="last-name" required></input><br>
+		
+		<label for="salary-requirement">Salary Requirement: </label>
+		<input id="salary-requirement" class="text-box" type="number" name="salary-requirement" required></input><br>
+		
+		<label>Select a Job: </label><br>
+		<input id="software-engineer" type="radio" name="job" value="Software Engineer" required></input>
+		<label for="software-engineer"> Software Engineer</label><br>
+		<input id="qa-engineer" type="radio" name="job" value="QA Engineer"></input>
+		<label for="qa-engineer"> QA Engineer</label><br>
+		<input id="product-manager" type="radio" name="job" value="Product Manager"></input>
+		<label for="product-manager"> Product Manager</label><br>
+		
+		<label><input class="submit-btn" type="submit" name="submit" value="Submit Application"></label>
+	</form>
+<!-- This page needs a form that can capture data about the user's
+first name, last name, job title, and salary requirements. -->
+{% endblock %}

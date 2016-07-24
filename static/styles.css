@@ -1,0 +1,30 @@
+/* Your styles can go here. */
+body {
+	margin-left: 10px;
+}
+input.text-box {
+	background-color: #ffff66;
+}
+
+input.submit-btn {
+	background-color: #ffff66;
+}
+
+form label span {
+	font-weight: 900;
+}
+
+form.border {
+	padding: 5px;
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+}
+
+div span {
+	margin-top: 5px;
+	padding: 5px;
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+}
